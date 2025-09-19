@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="./remixicon/fonts/remixicon.css">
+    <title>mobile products</title>
+</head>
+<body class="dark:bg-[#213448]" >
+    <main>
+        <!-- header section -->
+        <div class="header dark:text-[#f9f3ef]  flex gap-50% lg:gap-0 justify-evenly items-center py-[30px] text-[25px] font-[600]">
+            <div class="logo  text-[30px] font-[700] pl-[50px] mr-[10%]">CallMe...</div>
+            <nav class="hidden lg:flex justify-center ">
+                <ul class="flex justify-center gap-[100px]">
+                    <li class="hover:text-[#456882] hover:cursor-pointer dark:hover:text-[#D2C1B6]">Home</li>
+                    <li class="hover:text-[#456882] hover:cursor-pointer dark:hover:text-[#D2C1B6]">Articels</li>
+                    <li class="hover:text-[#456882] hover:cursor-pointer dark:hover:text-[#D2C1B6]">products</li>
+                    <li class="hover:text-[#456882] hover:cursor-pointer dark:hover:text-[#D2C1B6]">About us</li>
+                </ul>
+            </nav>
+            <div class="megamenu  lg:hidden relative group h-[100%]">
+                <div class="line h-[2px] w-[32px] bg-black dark:bg-[#D2C1B6] my-[10px]"></div>
+                <div class="line h-[2px] w-[32px] bg-black dark:bg-[#D2C1B6] my-[10px]"></div>
+                <div class="line h-[2px] w-[32px] bg-black dark:bg-[#D2C1B6] my-[10px]"></div>
+                <nav class=" overflow-hidden h-[0vh] group-hover:h-[100vh] absolute top-10 right-0 md:flex justify-center bg-[#837a75] w-[70vw]">
+                    <ul class="flex flex-col justify-center gap-[50px]">
+                        <li class="hover:text-[#456882] hover:cursor-pointer dark:hover:text-[#D2C1B6] pl-[20px] pt-3">Home</li>
+                        <li class="hover:text-[#456882] hover:cursor-pointer dark:hover:text-[#D2C1B6] pl-[20px] pt-3">Articels</li>
+                        <li class="hover:text-[#456882] hover:cursor-pointer dark:hover:text-[#D2C1B6] pl-[20px] pt-3">products</li>
+                        <li class="hover:text-[#456882] hover:cursor-pointer dark:hover:text-[#D2C1B6] pl-[20px] pt-3">About us</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- bottoms and filters -->
+        <div class="bottoms">
+            <div class="sort-sodi dark:hover:bg-[#D2C1B6] dark:hover:text-black dark:shadow-[0_0_8px_white]">
+                <p>The lowest price</p>
+            </div>
+            <div class="sort-nozoli dark:hover:bg-[#D2C1B6] dark:hover:text-black dark:shadow-[0_0_8px_white]">
+                <p>The highest price</p>
+            </div>
+            <div class="sort-like dark:hover:bg-[#D2C1B6] dark:hover:text-black dark:shadow-[0_0_8px_white]">
+                <p>most popular</p>
+            </div>
+            <div class="sort-brand dark:hover:bg-[#D2C1B6] dark:hover:text-black dark:shadow-[0_0_8px_white]">
+                <p>choose brand</p>
+            </div>
+            <div class="sort-moreprice dark:hover:bg-[#D2C1B6] dark:hover:text-black dark:shadow-[0_0_8px_white]">
+                <p>more than ... price</p>
+            </div>
+            <div class="sort-lessprice dark:hover:bg-[#D2C1B6] dark:hover:text-black dark:shadow-[0_0_8px_white]">
+                <p>less than ... price</p>
+            </div>
+        </div>
+        <!-- products card -->
+         <div class="products">
+
+         </div>
+
+         <!-- bottom darkmode -->
+        <div class="dark-light w-[60px] h-[60px] bg-[#213448] dark:bg-white shadow-[0_0_10px_gray] rounded-[50%] fixed bottom-10 left-4 md:left-10 cursor-pointer flex flex-row flex-wrap items-center justify-center">
+            <i class="ri-moon-fill text-white text-[35px] dark:hidden"></i>
+            <i class="ri-sun-fill text-[#213448] hidden dark:inline-block text-[35px]"></i>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script>
+      let btn=document.querySelector("main>div.dark-light")
+      btn.addEventListener("click", function(){
+        document.querySelector("html").classList.toggle("dark")
+      })
+    </script>
+</body>
+</html>
