@@ -165,33 +165,33 @@ products.forEach((elem) => {
   let colorBox = "";
   if (elem.colors && elem.colors.length > 0) {
     elem.colors.forEach((c) => {
-      colorBox += `<div style="background-color:${c}"></div>`;
+      colorBox += `<div class="w-[25px] h-[25px] rounded-full border border-[#ccc] cursor-pointer" style="background-color:${c}"></div>`;
     });
   }
   container.innerHTML += `
-    <div class="card">
-        <img src="${elem.img}" alt="phones">
-        <div class="subtile">
-            <p>${elem.name}</p>
-            <p>${elem.brand}</p>
-            <div class="colors">
-              ${colorBox}
-            </div>
-            <div class="icon">
-                <div class="pric">
-                    <span>$</span>
-                    <p>${elem.price}</p>
-                </div>
-                <div class="like">
-                    <span><i class="ri-heart-fill"></i></span>
-                    <p>${elem.like}</p>
-                </div>
-                <div class="buy">
-                    <span>buy</span>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="card w-[280px] bg-white flex flex-col items-center gap-[10px] rounded-[30px] py-[15px] shadow-[0_0_8px_gray]">
+      <img src="${elem.img}" alt="phones" class="w-[250px] h-[250px] rounded-[16px]">
+      <div class="subtile w-[80%] flex flex-col gap-2.5">
+          <p class="font-bold text-[22px]">${elem.name}</p>
+          <p class="text-[18px] text-[#272727]">${elem.brand}</p>
+          <div class="colors flex gap-1.5 my-1">
+          ${colorBox}
+          </div>
+          <div class="icon flex justify-center items-center gap-[25px] text-[17px] text-[#262626]">
+              <div class="pric flex gap-[3px]">
+                  <span class="font-semibold">$</span>
+                  <p>${elem.price}</p>
+              </div>
+              <div class="like flex gap-[5px]">
+                  <span><i class="ri-heart-fill text-[#dc2525]"></i></span>
+                  <p>${elem.like}</p>
+              </div>
+              <div class="buy bg-[#f9f3ef] px-7 py-2 rounded-[10px] shadow-[0_2px_6px_gray] font-semibold transition-all duration-300 ease-in hover:bg-[#1b3c53] hover:text-white hover:cursor-pointer">
+                  <a>buy</a>
+              </div>
+          </div>
+      </div>
+  </div>
     `;
 });
 
@@ -269,28 +269,28 @@ document.querySelector("div.sort-sodi").addEventListener("click", function () {
       });
     }
     container.innerHTML += `
-    <div class="card">
-        <img src="${elem.img}" alt="phones">
-        <div class="subtile">
-            <p>${elem.name}</p>
-            <p>${elem.brand}</p>
-            <div class="colors">
-              ${colorBox}
-            </div>
-            <div class="icon">
-                <div class="pric">
-                    <span>$</span>
-                    <p>${elem.price}</p>
-                </div>
-                <div class="like">
-                    <span><i class="ri-heart-fill"></i></span>
-                    <p>${elem.like}</p>
-                </div>
-                <div class="buy">
-                    <span>buy</span>
-                </div>
-            </div>
-        </div>
+    <div class="card w-[280px] bg-white flex flex-col items-center gap-[10px] rounded-[30px] py-[15px] shadow-[0_0_8px_gray]">
+      <img src="${elem.img}" alt="phones" class="w-[250px] h-[250px] rounded-[16px]">
+      <div class="subtile w-[80%] flex flex-col gap-2.5">
+          <p class="font-bold text-[22px]">${elem.name}</p>
+          <p class="text-[18px] text-[#272727]">${elem.brand}</p>
+          <div class="colors flex gap-1.5 my-1">
+          ${colorBox}
+          </div>
+          <div class="icon flex justify-center items-center gap-[25px] text-[17px] text-[#262626]">
+              <div class="pric flex gap-[3px]">
+                  <span class="font-semibold">$</span>
+                  <p>${elem.price}</p>
+              </div>
+              <div class="like flex gap-[5px]">
+                  <span><i class="ri-heart-fill text-[#dc2525]"></i></span>
+                  <p>${elem.like}</p>
+              </div>
+              <div class="buy bg-[#f9f3ef] px-7 py-2 rounded-[10px] shadow-[0_2px_6px_gray] font-semibold transition-all duration-300 ease-in hover:bg-[#1b3c53] hover:text-white hover:cursor-pointer">
+                  <a>buy</a>
+              </div>
+          </div>
+      </div>
     </div>
     `;
   });
@@ -308,28 +308,28 @@ document.querySelector(".sort-nozoli").addEventListener("click", function () {
       });
     }
     container.innerHTML += `
-    <div class="card">
-        <img src="${elem.img}" alt="phones">
-        <div class="subtile">
-            <p>${elem.name}</p>
-            <p>${elem.brand}</p>
-            <div class="colors">
-              ${colorBox}
-            </div>
-            <div class="icon">
-                <div class="pric">
-                    <span>$</span>
-                    <p>${elem.price}</p>
-                </div>
-                <div class="like">
-                    <span><i class="ri-heart-fill"></i></span>
-                    <p>${elem.like}</p>
-                </div>
-                <div class="buy">
-                    <span>buy</span>
-                </div>
-            </div>
-        </div>
+    <div class="card w-[280px] bg-white flex flex-col items-center gap-[10px] rounded-[30px] py-[15px] shadow-[0_0_8px_gray]">
+      <img src="${elem.img}" alt="phones" class="w-[250px] h-[250px] rounded-[16px]">
+      <div class="subtile w-[80%] flex flex-col gap-2.5">
+          <p class="font-bold text-[22px]">${elem.name}</p>
+          <p class="text-[18px] text-[#272727]">${elem.brand}</p>
+          <div class="colors flex gap-1.5 my-1">
+          ${colorBox}
+          </div>
+          <div class="icon flex justify-center items-center gap-[25px] text-[17px] text-[#262626]">
+              <div class="pric flex gap-[3px]">
+                  <span class="font-semibold">$</span>
+                  <p>${elem.price}</p>
+              </div>
+              <div class="like flex gap-[5px]">
+                  <span><i class="ri-heart-fill text-[#dc2525]"></i></span>
+                  <p>${elem.like}</p>
+              </div>
+              <div class="buy bg-[#f9f3ef] px-7 py-2 rounded-[10px] shadow-[0_2px_6px_gray] font-semibold transition-all duration-300 ease-in hover:bg-[#1b3c53] hover:text-white hover:cursor-pointer">
+                  <a>buy</a>
+              </div>
+          </div>
+      </div>
     </div>
     `;
   });
@@ -347,28 +347,28 @@ document.querySelector("div.sort-like").addEventListener("click", function () {
       });
     }
     container.innerHTML += `
-    <div class="card">
-        <img src="${elem.img}" alt="phones">
-        <div class="subtile">
-            <p>${elem.name}</p>
-            <p>${elem.brand}</p>
-            <div class="colors">
-              ${colorBox}
-            </div>
-            <div class="icon">
-                <div class="pric">
-                    <span>$</span>
-                    <p>${elem.price}</p>
-                </div>
-                <div class="like">
-                    <span><i class="ri-heart-fill"></i></span>
-                    <p>${elem.like}</p>
-                </div>
-                <div class="buy">
-                    <span>buy</span>
-                </div>
-            </div>
-        </div>
+    <div class="card w-[280px] bg-white flex flex-col items-center gap-[10px] rounded-[30px] py-[15px] shadow-[0_0_8px_gray]">
+      <img src="${elem.img}" alt="phones" class="w-[250px] h-[250px] rounded-[16px]">
+      <div class="subtile w-[80%] flex flex-col gap-2.5">
+          <p class="font-bold text-[22px]">${elem.name}</p>
+          <p class="text-[18px] text-[#272727]">${elem.brand}</p>
+          <div class="colors flex gap-1.5 my-1">
+          ${colorBox}
+          </div>
+          <div class="icon flex justify-center items-center gap-[25px] text-[17px] text-[#262626]">
+              <div class="pric flex gap-[3px]">
+                  <span class="font-semibold">$</span>
+                  <p>${elem.price}</p>
+              </div>
+              <div class="like flex gap-[5px]">
+                  <span><i class="ri-heart-fill text-[#dc2525]"></i></span>
+                  <p>${elem.like}</p>
+              </div>
+              <div class="buy bg-[#f9f3ef] px-7 py-2 rounded-[10px] shadow-[0_2px_6px_gray] font-semibold transition-all duration-300 ease-in hover:bg-[#1b3c53] hover:text-white hover:cursor-pointer">
+                  <a>buy</a>
+              </div>
+          </div>
+      </div>
     </div>
     `;
   });
@@ -389,28 +389,28 @@ document.querySelector("div.sort-brand").addEventListener("click", function () {
       });
     }
     container.innerHTML += `
-    <div class="card">
-        <img src="${elem.img}" alt="phones">
-        <div class="subtile">
-            <p>${elem.name}</p>
-            <p>${elem.brand}</p>
-            <div class="colors">
-              ${colorBox}
-            </div>
-            <div class="icon">
-                <div class="pric">
-                    <span>$</span>
-                    <p>${elem.price}</p>
-                </div>
-                <div class="like">
-                    <span><i class="ri-heart-fill"></i></span>
-                    <p>${elem.like}</p>
-                </div>
-                <div class="buy">
-                    <span>buy</span>
-                </div>
-            </div>
-        </div>
+    <div class="card w-[280px] bg-white flex flex-col items-center gap-[10px] rounded-[30px] py-[15px] shadow-[0_0_8px_gray]">
+      <img src="${elem.img}" alt="phones" class="w-[250px] h-[250px] rounded-[16px]">
+      <div class="subtile w-[80%] flex flex-col gap-2.5">
+          <p class="font-bold text-[22px]">${elem.name}</p>
+          <p class="text-[18px] text-[#272727]">${elem.brand}</p>
+          <div class="colors flex gap-1.5 my-1">
+          ${colorBox}
+          </div>
+          <div class="icon flex justify-center items-center gap-[25px] text-[17px] text-[#262626]">
+              <div class="pric flex gap-[3px]">
+                  <span class="font-semibold">$</span>
+                  <p>${elem.price}</p>
+              </div>
+              <div class="like flex gap-[5px]">
+                  <span><i class="ri-heart-fill text-[#dc2525]"></i></span>
+                  <p>${elem.like}</p>
+              </div>
+              <div class="buy bg-[#f9f3ef] px-7 py-2 rounded-[10px] shadow-[0_2px_6px_gray] font-semibold transition-all duration-300 ease-in hover:bg-[#1b3c53] hover:text-white hover:cursor-pointer">
+                  <a>buy</a>
+              </div>
+          </div>
+      </div>
     </div>
     `;
   });
@@ -433,28 +433,28 @@ document
         });
       }
       container.innerHTML += `
-    <div class="card">
-        <img src="${elem.img}" alt="phones">
-        <div class="subtile">
-            <p>${elem.name}</p>
-            <p>${elem.brand}</p>
-            <div class="colors">
-              ${colorBox}
-            </div>
-            <div class="icon">
-                <div class="pric">
-                    <span>$</span>
-                    <p>${elem.price}</p>
-                </div>
-                <div class="like">
-                    <span><i class="ri-heart-fill"></i></span>
-                    <p>${elem.like}</p>
-                </div>
-                <div class="buy">
-                    <span>buy</span>
-                </div>
-            </div>
-        </div>
+    <div class="card w-[280px] bg-white flex flex-col items-center gap-[10px] rounded-[30px] py-[15px] shadow-[0_0_8px_gray]">
+      <img src="${elem.img}" alt="phones" class="w-[250px] h-[250px] rounded-[16px]">
+      <div class="subtile w-[80%] flex flex-col gap-2.5">
+          <p class="font-bold text-[22px]">${elem.name}</p>
+          <p class="text-[18px] text-[#272727]">${elem.brand}</p>
+          <div class="colors flex gap-1.5 my-1">
+          ${colorBox}
+          </div>
+          <div class="icon flex justify-center items-center gap-[25px] text-[17px] text-[#262626]">
+              <div class="pric flex gap-[3px]">
+                  <span class="font-semibold">$</span>
+                  <p>${elem.price}</p>
+              </div>
+              <div class="like flex gap-[5px]">
+                  <span><i class="ri-heart-fill text-[#dc2525]"></i></span>
+                  <p>${elem.like}</p>
+              </div>
+              <div class="buy bg-[#f9f3ef] px-7 py-2 rounded-[10px] shadow-[0_2px_6px_gray] font-semibold transition-all duration-300 ease-in hover:bg-[#1b3c53] hover:text-white hover:cursor-pointer">
+                  <a>buy</a>
+              </div>
+          </div>
+      </div>
     </div>
     `;
     });
@@ -477,29 +477,29 @@ document
         });
       }
       container.innerHTML += `
-    <div class="card">
-        <img src="${elem.img}" alt="phones">
-        <div class="subtile">
-            <p>${elem.name}</p>
-            <p>${elem.brand}</p>
-            <div class="colors">
-              ${colorBox}
+  <div class="card w-[280px] bg-white flex flex-col items-center gap-[10px] rounded-[30px] py-[15px] shadow-[0_0_8px_gray]">
+    <img src="${elem.img}" alt="phones" class="w-[250px] h-[250px] rounded-[16px]">
+    <div class="subtile w-[80%] flex flex-col gap-2.5">
+        <p class="font-bold text-[22px]">${elem.name}</p>
+        <p class="text-[18px] text-[#272727]">${elem.brand}</p>
+        <div class="colors flex gap-1.5 my-1">
+        ${colorBox}
+        </div>
+        <div class="icon flex justify-center items-center gap-[25px] text-[17px] text-[#262626]">
+            <div class="pric flex gap-[3px]">
+                <span class="font-semibold">$</span>
+                <p>${elem.price}</p>
             </div>
-            <div class="icon">
-                <div class="pric">
-                    <span>$</span>
-                    <p>${elem.price}</p>
-                </div>
-                <div class="like">
-                    <span><i class="ri-heart-fill"></i></span>
-                    <p>${elem.like}</p>
-                </div>
-                <div class="buy">
-                    <span>buy</span>
-                </div>
+            <div class="like flex gap-[5px]">
+                <span><i class="ri-heart-fill text-[#dc2525]"></i></span>
+                <p>${elem.like}</p>
+            </div>
+            <div class="buy bg-[#f9f3ef] px-7 py-2 rounded-[10px] shadow-[0_2px_6px_gray] font-semibold transition-all duration-300 ease-in hover:bg-[#1b3c53] hover:text-white hover:cursor-pointer">
+                <a>buy</a>
             </div>
         </div>
     </div>
-    `;
+  </div>
+  `;
     });
   });
